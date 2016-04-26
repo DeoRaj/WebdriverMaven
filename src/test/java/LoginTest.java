@@ -24,9 +24,19 @@ public class LoginTest {
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[@id='Passwd']")).sendKeys("apple");
 		driver.findElement(By.xpath("//*[@id='signIn']")).click();
-		
-	}
+	
+		if
+(driver.findElement(By.xpath("//*[@id='errormsg_0_Passwd']")).isDisplayed())
+		//{
+System.out.println("");
+}
+		//else
 
+{ System.out.println("Valid login");
+
+}
+			
+			
 @AfterSuite
 	public void tearDown(){
 		driver.quit();
