@@ -27,15 +27,12 @@ public class LoginTest {
 	
 		if
 (driver.findElement(By.xpath("//*[@id='errormsg_0_Passwd']")).isDisplayed())
-		//{
-System.out.println("");
-}
-		//else
-
-{ System.out.println("Valid login");
+		{
+System.out.println("Invalid login");
+System.out.println("Valid login");
+		}
 
 }
-			
 			
 @AfterSuite
 	public void tearDown(){
